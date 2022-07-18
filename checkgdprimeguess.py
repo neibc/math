@@ -1,12 +1,15 @@
 # check whether the result of prime_number * next_prime_number + 2 is prime number or not
 # ref. stackoverflow.com
 #
+# pip3 install sympy!
+#
 # 2022.07.17 by neibc96@gmail.com & GD
 
 import math
 from datetime import datetime
 import sys
 import platform
+import sympy
 
 #global variables
 ispause = 0
@@ -35,11 +38,13 @@ while maxnum > 0:
     starta = datetime.now()
 
     for i in range(3, maxnum):
-        if is_prime(i) == True:
+#        if is_prime(i) == True:
+        if sympy.isprime(i) == True:
             pnum2 = i
             
             tval = pnum1 * pnum2 + 2
-            pcheckresult = is_prime(tval)
+#            pcheckresult = is_prime(tval)
+            pcheckresult = sympy.isprime(tval)
             if pcheckresult == True:
                 noftrue=noftrue+1
             else: 
