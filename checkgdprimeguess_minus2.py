@@ -1,4 +1,4 @@
-# check whether the result of prime_number * next_prime_number + 2 is prime number or not
+# check whether the result of prime_number * next_prime_number - 2 is prime number or not
 # ref. stackoverflow.com
 #
 # pip3 install sympy!
@@ -49,7 +49,7 @@ while maxnum > 0:
                 noftrue=noftrue+1
             else: 
                 noffalse=noffalse+1
-            print('%d * %d + 2 = %d and %s' %(pnum1, pnum2, tval, pcheckresult))
+            print('%d * %d - 2 = %d and %s' %(pnum1, pnum2, tval, pcheckresult))
             pnum1 = pnum2
     startb = datetime.now()
     print('\nend time   : ' + datetime.utcnow().strftime('%Y/%m/%d_%H:%M:%S.%f'))
