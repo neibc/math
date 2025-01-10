@@ -29,7 +29,8 @@
         Intel(R) i7-3820 3.6Ghz                                 -> 4.09 sec
         Intel(R) i7-13700KF				        -> 1.21 sec (windows)
 	
-        by Justin, Kim:20011009
+        by Justin Kim:20011009
+
 */
 
 /* #ifdef WIN
