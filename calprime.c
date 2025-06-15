@@ -75,7 +75,7 @@ int     isPrime(long input) {
         if(0 < input && input < 3)
                 return TRUE;
 
-        if(input & 0x01 == 0x00)
+        if((input & 0x01) == 0x00)
                 return FALSE;
 
         printpct = onepercent = input / 100;
